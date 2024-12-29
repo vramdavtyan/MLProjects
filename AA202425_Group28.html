@@ -7520,9 +7520,10 @@ a.anchor-link {
 <p><strong>Members:</strong></p>
 <ul>
 <li><strong>Alexandre Baptista</strong>, Nº 64506</li>
-<li><strong>André Pires</strong>, Nº 64691</li>
+<li><strong>André Pires</strong>, Nº 64347</li>
 <li><strong>Vram Davtyan</strong>, Nº 64691</li>
 </ul>
+<p>Github Link - <a href="https://github.com/vramdavtyan/MLProjects">https://github.com/vramdavtyan/MLProjects</a></p>
 <h1 id="AA-Project----Learning-about-Pet-Adoption-using-PetFinder.my-Dataset">AA Project  - Learning about Pet Adoption using PetFinder.my Dataset<a class="anchor-link" href="#AA-Project----Learning-about-Pet-Adoption-using-PetFinder.my-Dataset">¶</a></h1>
 </div>
 </div>
@@ -7534,14 +7535,10 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Dataset">Dataset<a class="anchor-link" href="#Dataset">¶</a></h2><p>The dataset to be analysed is <strong><code>PetFinder_dataset.csv</code></strong>, made avaliable together with this project description. This dataset, downloaded from <a href="https://www.kaggle.com">Kaggle</a>, contains selected and modified data from the following competition: <a href="https://www.kaggle.com/c/petfinder-adoption-prediction/">PetFinder.my Adoption Prediction</a>.</p>
-<p>PetFinder.my has been Malaysia’s leading animal welfare platform since 2008, with a database of more than 150,000 animals. PetFinder collaborates closely with animal lovers, media, corporations, and global organizations to improve animal welfare. Animal adoption rates are strongly correlated to the metadata associated with their online profiles, such as descriptive text and photo characteristics. As one example, PetFinder is currently experimenting with a simple AI tool called the Cuteness Meter, which ranks how cute a pet is based on qualities present in their photos. In this competition data scientists are supposed to develop machine learning approaches to predict the adoptability of pets - specifically, how quickly is a pet adopted? If successful, they will be adapted into AI tools that will guide shelters and rescuers around the world on improving their pet profiles' appeal, reducing animal suffering and euthanization.
-<strong>In this project, your team is supposed to use only tabular data (not Images or Image Metadata) and see how far you can go in predicting and understanding PetFinder.my adoptions. You should use both supervised and unsupervised learning to tackle 2 tasks:</strong></p>
 <ol>
 <li><strong>Task 1 (Supervised Learning) - Predicting Adoption and Adoption Speed</strong></li>
 <li><strong>Task 2 (Unsupervised Learning) - Charactering Pets and their Adoption Speed</strong></li>
 </ol>
-<p>The <strong><code>PetFinder_dataset.csv</code></strong> your machine learning algorithms should learn from has <strong>14.993 instances</strong> described by <strong>24 data fields</strong> that you might use as <strong>categorical/numerical features</strong> and corresponds to a modified version of the <code>train.csv</code> file made available for the competition (<a href="https://www.kaggle.com/c/petfinder-adoption-prediction/data">https://www.kaggle.com/c/petfinder-adoption-prediction/data</a>). <strong>The target in the original Kaggle challenge is <code>Adoption Speed</code>.</strong></p>
 <h3 id="File-Descriptions">File Descriptions<a class="anchor-link" href="#File-Descriptions">¶</a></h3><ul>
 <li><strong>PetFinder_dataset.csv</strong> - Tabular/text data for machine learning.</li>
 <li><strong>breed_labels.csv</strong> - Contains Type and BreedName for each BreedID. Type 1 is dog, 2 is cat.</li>
@@ -7581,20 +7578,6 @@ a.anchor-link {
 <li>2 - Pet was adopted between 8 and 30 days (1st month) after being listed.</li>
 <li>3 - Pet was adopted between 31 and 90 days (2nd &amp; 3rd month) after being listed.</li>
 <li>4 - No adoption after 100 days of being listed. (There are no pets in this dataset that waited between 90 and 100 days).</li>
-</ul>
-<h3 id="Important-Notes-on-Data-Cleaning-and-Preprocessing"><strong>Important Notes on Data Cleaning and Preprocessing</strong><a class="anchor-link" href="#Important-Notes-on-Data-Cleaning-and-Preprocessing">¶</a></h3><ol>
-<li>Data can contain <strong>errors/typos</strong>, whose correction might improve the analysis.</li>
-<li>Some features can contain <strong>many values</strong>, whose grouping in categories (aggregation into bins) might improve the analysis.</li>
-<li>Data can contain <strong>missing values</strong>, that you might decide to fill. You might also decide to eliminate instances/features with high percentages of missing values.</li>
-<li><strong>Not all features are necessarily important</strong> for the analysis.</li>
-<li>Depending on the analysis, <strong>some features might have to be excluded</strong>.</li>
-<li>Class distribution is an important characteristic of the dataset that should be carefully taken into consideration. <strong>Class imbalance</strong> might impair machine learning.</li>
-</ol>
-<p>Some potentially useful links:</p>
-<ul>
-<li>Data Cleaning and Preprocessing in Scikit-learn: <a href="https://scikit-learn.org/stable/modules/preprocessing.html#">https://scikit-learn.org/stable/modules/preprocessing.html#</a></li>
-<li>Data Cleaning and Preprocessing in Orange: <a href="https://docs.biolab.si//3/visual-programming/widgets/data/preprocess.html">https://docs.biolab.si//3/visual-programming/widgets/data/preprocess.html</a></li>
-<li>Dealing with imbalance datasets: <a href="https://pypi.org/project/imbalanced-learn/">https://pypi.org/project/imbalanced-learn/</a> and <a href="https://www.kaggle.com/rafjaa/resampling-strategies-for-imbalanced-datasets#t7">https://www.kaggle.com/rafjaa/resampling-strategies-for-imbalanced-datasets#t7</a></li>
 </ul>
 </div>
 </div>
@@ -7754,19 +7737,6 @@ State Labels
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>In this task you should <strong>understand better the features</strong>, their distribution of values, potential errors, etc and plan/describe what data preprocessing steps should be performed next. Very important also is the distribution of values in the target (class distribution).</p>
-<p>Here you can find a notebook with some examples of what you can do in <strong>Exploratory Data Analysis</strong>: <a href="https://www.kaggle.com/artgor/exploration-of-data-step-by-step/notebook">https://www.kaggle.com/artgor/exploration-of-data-step-by-step/notebook</a>. You can also use Orange widgets for this.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
 <h2 id="Data-Preprocessing-and-Visualization">Data Preprocessing and Visualization<a class="anchor-link" href="#Data-Preprocessing-and-Visualization">¶</a></h2><p>In this code block, we replace numeric values in the dataset with descriptive labels to improve interpretability. For instance, 'Gender' values are mapped to 'Male', 'Female', and 'Mixed'. This is followed by a visualization step where a set of selected features (e.g., <code>Type</code>, <code>Age</code>, <code>Breed1</code>, etc.) are plotted either as bar charts for categorical variables or histograms for numerical variables. The age data is additionally binned into categories for better visualization. The plots are organized into a grid for a comprehensive overview of the dataset's feature distributions.</p>
 <ol>
 <li><p><strong>Label Mapping</strong>:<br/>
@@ -7869,53 +7839,6 @@ We visualized the distributions of key features (<code>Type</code>, <code>Age</c
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="0.3.-Preprocessing-Data">0.3. Preprocessing Data<a class="anchor-link" href="#0.3.-Preprocessing-Data">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Here you might perform data preprocessing that will be used for both supervised and unsupervised learning tasks.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Task-1-(Supervised-Learning)---Predicting-Adoption-and-Adoption-Speed">Task 1 (Supervised Learning) - Predicting Adoption and Adoption Speed<a class="anchor-link" href="#Task-1-(Supervised-Learning)---Predicting-Adoption-and-Adoption-Speed">¶</a></h2><p>In this task you should target 3 classification tasks:</p>
-<ol>
-<li><strong>Predicting  Adoption (binary classification)</strong>: create a new target from AdoptionSpeed that is 1 if AdoptionSpeed &lt;&gt; 4 and 0 otherwise.</li>
-<li><strong>Predicting AdoptionSpeed (multiclass classification)</strong>: in this task you should use the original target <code>AdoptionSpeed</code>, whose values are in the set {0, 1, 2, 3 , 4} (5 classes). This is a very difficult problem. You might also want to consider 3 classes (for instance {0-1, 2-3, 4}, or other sets that make sense).</li>
-<li><strong>Train specialized models for cats and dogs</strong>: train with cat/dog instances and check whether the classification performance changes/improves when Predicting Adoption and Predicting AdoptionSpeed.
-<strong>You should:</strong></li>
-</ol>
-<ul>
-<li>Choose <strong>5 classifiers</strong> from <strong>at least 3 of the following categories</strong>: Tree models, Probabilistic models, Distance-based models and Linear models. You can also try one Ensemble Classifier (<a href="https://scikit-learn.org/1.5/modules/ensemble.html">https://scikit-learn.org/1.5/modules/ensemble.html</a>).</li>
-<li>Use <strong>cross-validation</strong> to evaluate the results.</li>
-<li>Present and discuss the results for different evaluation measures, present confusion matrices. Remember that not only overall results are important. Check what happens when learning to predict each class. Remember also that some metrics might be more adequate than others according to the problem at hand.</li>
-<li>Describe the parameters used for each classifier and how their choice impacted or not the results.</li>
-<li>Choose the best classifier and fundament you choice.</li>
-<li><strong>Discuss critically your choices and the results!</strong></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="1.1.-Specific-Data-Preprocessing-for-Classification">1.1. Specific Data Preprocessing for Classification<a class="anchor-link" href="#1.1.-Specific-Data-Preprocessing-for-Classification">¶</a></h2>
 </div>
 </div>
@@ -7927,7 +7850,6 @@ We visualized the distributions of key features (<code>Type</code>, <code>Age</c
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
 <h2 id="Binary-Classification:-Predicting-Adoption">Binary Classification: Predicting Adoption<a class="anchor-link" href="#Binary-Classification:-Predicting-Adoption">¶</a></h2><ol>
 <li><p><strong>Preprocessing</strong>:<br/>
 The dataset is preprocessed by removing irrelevant columns, converting the target variable (<code>AdoptionSpeed</code>) to a binary label (<code>Adopted</code>), and encoding categorical features using Label Encoding for ordinal columns and One-Hot Encoding for nominal columns.</p>
@@ -8207,7 +8129,6 @@ Confusion Matrix for SVM:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
 <h2 id="Enhanced-Binary-Classification-with-Hyperparameter-Tuning">Enhanced Binary Classification with Hyperparameter Tuning<a class="anchor-link" href="#Enhanced-Binary-Classification-with-Hyperparameter-Tuning">¶</a></h2><ol>
 <li><p><strong>Data Preprocessing</strong>:<br/>
 The dataset is preprocessed by filling missing values, dropping irrelevant columns, and transforming the target variable <code>AdoptionSpeed</code> into a binary target <code>Adopted</code> (1 for adopted pets, 0 for non-adopted). Categorical columns are encoded using Label Encoding for ordinal features and One-Hot Encoding for nominal features.</p>
@@ -8586,7 +8507,6 @@ Precision-Recall AUC for SVM: 0.8432
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
 <h2 id="Multiclass-Classification-with-Hyperparameter-Tuning">Multiclass Classification with Hyperparameter Tuning<a class="anchor-link" href="#Multiclass-Classification-with-Hyperparameter-Tuning">¶</a></h2><ol>
 <li><p><strong>Data Preprocessing</strong>:<br/>
 The dataset is preprocessed by filling missing values, dropping irrelevant columns, and encoding both ordinal and nominal categorical features. The target variable <code>AdoptionSpeed</code> remains unchanged (with 5 classes: 0 to 4).</p>
@@ -10168,7 +10088,7 @@ Cluster
 <div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># For the sake of simplicity, let's assume you want to cluster on the numerical features only</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># For the sake of simplicity, let's assume we want to cluster on the numerical features only</span>
 <span class="n">numerical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Age'</span><span class="p">,</span> <span class="s1">'MaturitySize'</span><span class="p">,</span> <span class="s1">'FurLength'</span><span class="p">,</span> <span class="s1">'Vaccinated'</span><span class="p">,</span> <span class="s1">'Dewormed'</span><span class="p">,</span> <span class="s1">'Sterilized'</span><span class="p">,</span> <span class="s1">'Health'</span><span class="p">,</span> <span class="s1">'Fee'</span><span class="p">,</span> <span class="s1">'Quantity'</span><span class="p">]</span>
 
 <span class="n">X</span> <span class="o">=</span> <span class="n">data_cleaned</span><span class="p">[</span><span class="n">numerical_features</span><span class="p">]</span>  <span class="c1"># Data for clustering</span>
@@ -10270,7 +10190,7 @@ Cluster
 <li>The classification models provided a way to predict adoption likelihood, offering useful information for future adoption efforts.</li>
 </ul>
 </li>
-<li><p><strong>Future Work</strong>:</p>
+<li><p><strong>Potential Imporvements</strong>:</p>
 <ul>
 <li>Incorporating additional data (e.g., pet photos, owner details) might improve predictive accuracy.</li>
 <li>More advanced techniques like <strong>ensemble methods</strong> or <strong>deep learning</strong> could also be explored to enhance model performance.</li>
