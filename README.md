@@ -27,7 +27,7 @@ cd MLProjects
 It is recommended to create a virtual environment to manage the dependencies. You can do this using `venv`:
 
 ```bash
-python -m venv env
+python -m venv venv
 ```
 
 Activate the virtual environment:
@@ -35,12 +35,12 @@ Activate the virtual environment:
 - **Windows**:
 
   ```bash
-  .\env\Scripts\activate
+  .\venv\Scripts\activate
   ```
 
 - **Mac/Linux**:
   ```bash
-  source env/bin/activate
+  source venv/bin/activate
   ```
 
 ### 3. Install Required Libraries
